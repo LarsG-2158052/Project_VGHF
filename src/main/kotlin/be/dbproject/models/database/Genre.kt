@@ -1,15 +1,15 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import javax.persistence.Column
 import javax.persistence.Entity
 import javax.persistence.Table
 
 @Entity
-@Table(name = "ItemType")
-data class ItemType(
+@Table(name = "Genre")
+data class Genre (
     @Column
     var name: String
-) : DataBaseModel()
+) : DatabaseModel()
 {
     constructor() : this (
         ""

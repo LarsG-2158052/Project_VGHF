@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import java.time.LocalDate
 import javax.persistence.*
@@ -44,7 +44,7 @@ data class Item(
         inverseJoinColumns = [JoinColumn(name = "genreid")]
     )
     var genres: Set<Genre>
-) : DataBaseModel() {
+) : DatabaseModel() {
     constructor() :this(
         "",
         0.0,

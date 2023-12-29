@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import javax.persistence.Column
 import javax.persistence.Entity
@@ -15,7 +15,7 @@ data class Publisher(
 
     @Column
     var website: String?
-) : DataBaseModel()
+) : DatabaseModel()
 {
     override fun toString(): String {
         return name

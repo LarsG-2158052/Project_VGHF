@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import javax.persistence.*
 
@@ -23,7 +23,7 @@ data class Location(
 
     @Column
     var houseNumber: Int
-) : DataBaseModel()
+) : DatabaseModel()
 {
     constructor() : this (
         LocationType(),

@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import javax.persistence.*
 
@@ -20,7 +20,7 @@ data class Visitor(
     @ManyToOne
     @JoinColumn(name = "locationID")
     var location: Location,
-) : DataBaseModel()
+) : DatabaseModel()
 {
     override fun toString(): String {
         return "$firstName $lastName"

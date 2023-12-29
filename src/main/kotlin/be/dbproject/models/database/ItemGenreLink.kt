@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import javax.persistence.Entity
 import javax.persistence.JoinColumn
@@ -15,7 +15,7 @@ data class ItemGenreLink(
     @ManyToOne
     @JoinColumn(name = "genreid")
     var genre: Genre
-) : DataBaseModel()
+) : DatabaseModel()
 {
     override fun toString(): String {
         return "$item -> $genre"

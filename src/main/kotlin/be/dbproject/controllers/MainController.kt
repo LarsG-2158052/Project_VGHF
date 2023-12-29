@@ -1,7 +1,7 @@
 package be.dbproject.controllers
 
 import be.dbproject.ProjectMain
-import be.dbproject.models.DataBaseModels.*
+import be.dbproject.models.database.*
 import javafx.fxml.FXML
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -49,11 +49,11 @@ class MainController {
         btnVisitorLogDetails.setOnAction { openTableView(VisitorLog::class) }
     }
 
-    private fun <T : DataBaseModel> openTableView(entityType: KClass<T>) {
+    private fun <T : DatabaseModel> openTableView(entityType: KClass<T>) {
         try {
             val stage = Stage()
             val loader = FXMLLoader(javaClass.classLoader.getResource("DataBaseModelTableView.fxml"))
-            loader.setController(DataBaseModelTableView(entityType))
+            loader.setController(DatabaseModelTableView(entityType))
             val root: Parent = loader.load()
 
             val scene = Scene(root)

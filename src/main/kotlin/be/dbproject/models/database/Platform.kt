@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import java.time.LocalDate
 import javax.persistence.Column
@@ -16,7 +16,7 @@ data class Platform(
 
     @Column
     var releaseDate: LocalDate
-) : DataBaseModel()
+) : DatabaseModel()
 {
     constructor() : this (
         "",

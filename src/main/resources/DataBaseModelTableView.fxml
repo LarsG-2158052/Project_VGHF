@@ -5,22 +5,29 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <VBox prefHeight="400.0" prefWidth="755.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
-      <TableView fx:id="tblItems" VBox.vgrow="ALWAYS">
+   <VBox prefHeight="400.0" prefWidth="755.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane>
+         <children>
+            <HBox fx:id="filterBox" prefHeight="25.0" prefWidth="531.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="205.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <HBox maxWidth="200.0" spacing="5.0" AnchorPane.rightAnchor="5.0">
+               <children>
+                  <Button fx:id="createElementBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="New" />
+                  <Button fx:id="editElementBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Edit" />
+                  <Button fx:id="deleteElementBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Delete" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
          <columns>
          </columns>
       </TableView>
-
-      <HBox alignment="CENTER" spacing="100.0">
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-         <padding>
-            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
-         </padding>
-         <Button fx:id="createElementBtn" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="New Item" />
-         <Button fx:id="deleteElementBtn" layoutX="30.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Delete Selected Item" />
-         <Button fx:id="editElementBtn" layoutX="246.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="176.0" text="Edit Selected Item" />
-      </HBox>
    </VBox>
 </AnchorPane>

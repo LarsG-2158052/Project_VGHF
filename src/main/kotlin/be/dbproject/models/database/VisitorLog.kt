@@ -1,4 +1,4 @@
-package be.dbproject.models.DataBaseModels
+package be.dbproject.models.database
 
 import java.time.LocalDate
 import javax.persistence.*
@@ -19,7 +19,7 @@ data class VisitorLog(
 
     @Column
     var donation: Double
-) : DataBaseModel()
+) : DatabaseModel()
 {
     override fun toString(): String {
         return "$visitor - $location"

@@ -6,15 +6,15 @@
         <description>Project VGHF</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>be.dbproject.models.DataBaseModels.Item</class>
-        <class>be.dbproject.models.DataBaseModels.Genre</class>
-        <class>be.dbproject.models.DataBaseModels.ItemType</class>
-        <class>be.dbproject.models.DataBaseModels.Publisher</class>
-        <class>be.dbproject.models.DataBaseModels.Location</class>
-        <class>be.dbproject.models.DataBaseModels.LocationType</class>
-        <class>be.dbproject.models.DataBaseModels.Platform</class>
-        <class>be.dbproject.models.DataBaseModels.Visitor</class>
-        <class>be.dbproject.models.DataBaseModels.VisitorLog</class>
+        <class>be.dbproject.models.database.Item</class>
+        <class>be.dbproject.models.database.Genre</class>
+        <class>be.dbproject.models.database.ItemType</class>
+        <class>be.dbproject.models.database.Publisher</class>
+        <class>be.dbproject.models.database.Location</class>
+        <class>be.dbproject.models.database.LocationType</class>
+        <class>be.dbproject.models.database.Platform</class>
+        <class>be.dbproject.models.database.Visitor</class>
+        <class>be.dbproject.models.database.VisitorLog</class>
 
 
         <properties>
